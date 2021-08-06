@@ -1,4 +1,4 @@
-class SlingShot{
+class slingShot{
     constructor(bodyA, pointB){
         var options = {
             bodyA: bodyA,
@@ -6,6 +6,7 @@ class SlingShot{
             stiffness: 0.04,
             length: 20
         }        
+
         this.pointB = pointB
         this.sling = Constraint.create(options);
         World.add(world, this.sling);
